@@ -2,7 +2,7 @@ Suppose there is a hat containing 5 blue balls, 4 red balls, and 2 green balls. 
 
 For this project, you will write a program to determine the approximate probability of drawing certain balls randomly from a hat.
 
-First, create a `Hat` class in `probability-calculator.py`. The class should take a variable number of arguments that specify the number of balls of each color that are in the hat. For example, a class object could be created in any of these ways:
+First, create a `Hat` class in `probability_calculator.py`. The class should take a variable number of arguments that specify the number of balls of each color that are in the hat. For example, a class object could be created in any of these ways:
 ```python
 hat1 = Hat(yellow=3, blue=2, green=6)
 hat2 = Hat(red=5, orange=4)
@@ -12,7 +12,7 @@ A hat will always be created with at least one ball. The arguments passed into t
 
 The `Hat` class should have a `draw` method that accepts an argument indicating the number of balls to draw from the hat. This method should remove balls at random from `contents` and return those balls as a list of strings. The balls should not go back into the hat during the draw, similar to an urn experiment without replacement. If the number of balls to draw exceeds the available quantity, return all the balls.
 
-Next, create an `experiment` function in `probability-calculator.py` (not inside the `Hat` class). This function should accept the following arguments:
+Next, create an `experiment` function in `probability_calculator.py` (not inside the `Hat` class). This function should accept the following arguments:
 
 * `hat`: A hat object containing balls that should be copied inside the function.
 * `expected_balls`: An object indicating the exact group of balls to attempt to draw from the hat for the experiment. For example, to determine the probability of drawing 2 blue balls and 1 red ball from the hat, set `expected_balls` to `{"blue":2, "red":1}`.
